@@ -1,7 +1,6 @@
 .r1{
-    background-color: rgb(0, 0, 0);
+    background-color: #69B2C9;
     height: 150px;
-    
 }
 
 .r2{
@@ -9,8 +8,5 @@
 }
 h1.colorRed{
     color: white;
+    font-size: 70px;
 }
-
-.m{
-    background-color: red;
- }
