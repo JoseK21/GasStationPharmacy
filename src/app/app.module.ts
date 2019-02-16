@@ -1,9 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Routing
+import { AppRoutingModule } from './app-routing.module';
+
+// HTTP
+import {HttpClientModule} from '@angular/common/http';
+// Componentes
 import { GestionComponent } from './gestion/gestion.component';
 import { GenerarComponent } from './estadistica/generar/generar.component';
 import { LogInComponent } from './log-in/log-in.component';
@@ -28,6 +32,9 @@ import { RModificarComponent } from './rol/r-modificar/r-modificar.component';
 import { SEliminarComponent } from './sucursal/s-eliminar/s-eliminar.component';
 import { SIngresarComponent } from './sucursal/s-ingresar/s-ingresar.component';
 import { SModificarComponent } from './sucursal/s-modificar/s-modificar.component';
+
+// Services
+import {DataService} from './services/data.service';
 
 @NgModule({
   declarations: [
@@ -63,7 +70,7 @@ import { SModificarComponent } from './sucursal/s-modificar/s-modificar.componen
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
