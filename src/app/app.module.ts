@@ -35,6 +35,7 @@ import { SModificarComponent } from './sucursal/s-modificar/s-modificar.componen
 
 // Services
 import {DataService} from './services/data.service';
+import { PedidosComponent } from './pedidos/pedidos.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import {DataService} from './services/data.service';
     RModificarComponent,
     SEliminarComponent,
     SIngresarComponent,
-    SModificarComponent
+    SModificarComponent,
+    PedidosComponent
 
 
   ],

@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-nav.color{
-  background-color: #69B2C9;
+
+nav{
+  background: -moz-linear-gradient(DeepSkyBlue,Black);
+}
+
+div.degradado{
+  background: -moz-linear-gradient(DeepSkyBlue,Black);
+  padding-top: 50px;
+  padding-bottom: 30px;
 }

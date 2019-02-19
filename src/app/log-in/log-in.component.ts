@@ -6,14 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./log-in.component.css']
 })
 export class LogInComponent implements OnInit {
-  show = 0;
   constructor() {
   }
 
   ngOnInit() {
   }
 
-  logInClic() {
-    this.show = 1;
-  }
 }

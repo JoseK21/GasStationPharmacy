@@ -29,21 +29,21 @@ import { SModificarComponent } from './sucursal/s-modificar/s-modificar.componen
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
-  //Cliente
+  // Cliente
   { path: 'cliente/c-crear', component: CCrearComponent },
   { path: 'cliente/c-actualizar', component: CActualizarComponent },
   { path: 'cliente/c-eliminar', component: CEliminarComponent },
-  //Doctor
+  // Doctor
   { path: 'doctor/d-crear', component: DCrearComponent },
   { path: 'doctor/d-actualizar', component: DActualizarComponent },
   { path: 'doctor/d-eliminar', component: DEliminarComponent },
-  //Estadistica
+  // Estadistica
   { path: 'estadistica/generar', component: GenerarComponent },
-  //Gestion
+  // Gestion
   { path: 'gestion', component: GestionComponent },
-  //Inicio
+  // Inicio
   { path: 'inicio', component: InicioComponent },
-  //Medicamentos
+  // Medicamentos
   { path: 'medicamentos/m-actualizar', component: MActualizarComponent },
   { path: 'medicamentos/m-consulta', component: MConsultaComponent },
   { path: 'medicamentos/m-crear', component: MCrearComponent },
@@ -59,8 +59,6 @@ const routes: Routes = [
   { path: 'sucursal/s-eliminar', component: SEliminarComponent },
   { path: 'sucursal/s-ingresar', component: SIngresarComponent },
   { path: 'sucursal/s-modificar', component: SModificarComponent },
-
-
 
   { path: '**', pathMatch: 'full', redirectTo: 'pageNotFound' }
 ];

@@ -1,34 +1,23 @@
 <h4><strong>Login</strong></h4>
-<form>
+<div class="form-check form-check-inline">
+  <h5> Vista :   </h5>
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Administrador</label>
+
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">Sucursal</label>
+</div>
+
+<form class="color">
   <div class="form-group">
-    <label for="exampleFormControlInput1">Nombre de usuario</label>
-    <input type="text" class="form-control" id="exampleFormControlInput11" placeholder="">
+    <label for="logAdminName">Nombre de usuario</label>
+    <input type="text" class="form-control" id="logAdminName" placeholder="">
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Contraseña</label>
-    <input type="password" class="form-control" id="exampleFormControlInput1">
+    <label for="logAdminPassword">Contraseña</label>
+    <input type="password" class="form-control" id="logAdminPassword">
   </div>
-  <button (click)="logInClic()" type="button" class="btn btn-primary btn-block" >
+  <button type="button" class="btn btn-primary btn-block" routerLink="gestion">
     Log In
   </button>
 </form>
-
-<div *ngIf="show == 1">
-  <br>
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>Error...</strong> You should check in on some of those fields below.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close" routerLink="/gestion">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-</div>
-
-<div *ngIf="show == 2">
-  <br>
-  <div class="alert alert-success alert-dismissible fade show" role="alert">
-    <strong>Exito</strong> You should check in on some of those fields below.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close" routerLink="/gestion">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-</div>
