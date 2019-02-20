@@ -25,6 +25,7 @@ import { RModificarComponent } from './rol/r-modificar/r-modificar.component';
 import { SEliminarComponent } from './sucursal/s-eliminar/s-eliminar.component';
 import { SIngresarComponent } from './sucursal/s-ingresar/s-ingresar.component';
 import { SModificarComponent } from './sucursal/s-modificar/s-modificar.component';
+import {PedidosComponent} from './pedidos/pedidos.component';
 
 
 const routes: Routes = [
@@ -60,6 +61,10 @@ const routes: Routes = [
   { path: 'sucursal/s-ingresar', component: SIngresarComponent },
   { path: 'sucursal/s-modificar', component: SModificarComponent },
 
+  // Pedidos
+  {path: 'pedidos', component: PedidosComponent},
+
+  // Error Page Not Found
   { path: '**', pathMatch: 'full', redirectTo: 'pageNotFound' }
 ];
 

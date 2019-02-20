@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./log-in.component.css']
 })
 export class LogInComponent implements OnInit {
+  vista = '';
+
   constructor() {
   }
 
   ngOnInit() {
   }
 
+  setAdmin() {
+    this.vista = 'gestion';
+    console.log('Ir a gestion');
+  }
+
+
+  setSuc() {
+    this.vista = 'pedidos';
+    console.log('Ir a sucursal');
+  }
 }
