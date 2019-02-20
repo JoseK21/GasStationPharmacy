@@ -24,4 +24,9 @@ export class LogInComponent implements OnInit {
     this.vista = 'pedidos';
     console.log('Ir a sucursal');
   }
+  showAlert() {
+    if ( this.vista === '') {
+      alert('Seleccione una Vista : Administrador/Sucursal');
+    }
+  }
 }
