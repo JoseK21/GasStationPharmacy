@@ -6,6 +6,10 @@ nav{
 
 div.degradado{
   background: -moz-linear-gradient(DeepSkyBlue,Black);
+  background: -webkit-linear-gradient(DeepSkyBlue,Black);
   padding-top: 50px;
   padding-bottom: 30px;
+}
+.colorSpanExit{
+  color: white;
 }

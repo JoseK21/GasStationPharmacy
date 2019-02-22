@@ -1,30 +1,15 @@
-<table class="table">
-  <thead class="thead-dark">
-  <tr>
-    <th scope="col">#</th>
-    <th scope="col">First</th>
-    <th scope="col">Last</th>
-    <th scope="col">Handle</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-  </tr>
-  <tr>
-    <th scope="row">2</th>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-    <td>@twitter</td>
-  </tr>
-  </tbody>
-</table>
+<app-titulo></app-titulo>
+<div class="container">
+  <h4 align="center">Lista de pedidos </h4>
+  <button type="button" class="btn btn-primary btn-lg btn-block" routerLink="/pedidos/t-nuevo" >Nuevos</button>
+  <button type="button" class="btn btn-secondary btn-lg btn-block" routerLink="/pedidos/t-preparado">Preparados</button>
+  <button type="button" class="btn btn-primary btn-lg btn-block" routerLink="/pedidos/t-facturado">Facturados</button>
+  <button type="button" class="btn btn-secondary btn-lg btn-block" routerLink="/pedidos/t-retirado">Retirados</button>
+
+  <br>
+
+  <div align="center">
+    <a routerLink="/">Salir de vista Sucursal</a>
+  </div>
+
+</div>

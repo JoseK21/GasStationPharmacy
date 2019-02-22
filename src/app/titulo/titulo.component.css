@@ -8,7 +8,14 @@
 }
 h1.colorRed{
     color: white;
-    font-size: 60px;
+    font-size: 37px;
 }
 
+
+.jumbotron{
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
 

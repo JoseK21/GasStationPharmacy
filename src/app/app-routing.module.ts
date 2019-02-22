@@ -26,6 +26,10 @@ import { SEliminarComponent } from './sucursal/s-eliminar/s-eliminar.component';
 import { SIngresarComponent } from './sucursal/s-ingresar/s-ingresar.component';
 import { SModificarComponent } from './sucursal/s-modificar/s-modificar.component';
 import {PedidosComponent} from './pedidos/pedidos.component';
+import {TNuevoComponent} from './pedidos/t-nuevo/t-nuevo.component';
+import {TFacturadoComponent} from './pedidos/t-facturado/t-facturado.component';
+import {TPreparadoComponent} from './pedidos/t-preparado/t-preparado.component';
+import {TRetiradoComponent} from './pedidos/t-retirado/t-retirado.component';
 
 
 const routes: Routes = [
@@ -63,6 +67,10 @@ const routes: Routes = [
 
   // Pedidos
   {path: 'pedidos', component: PedidosComponent},
+  {path: 'pedidos/t-nuevo', component: TNuevoComponent},
+  {path: 'pedidos/t-facturado', component: TFacturadoComponent},
+  {path: 'pedidos/t-preparado', component: TPreparadoComponent},
+  {path: 'pedidos/t-retirado', component: TRetiradoComponent},
 
   // Error Page Not Found
   { path: '**', pathMatch: 'full', redirectTo: 'pageNotFound' }

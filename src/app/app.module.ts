@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // HTTP
 import {HttpClientModule} from '@angular/common/http';
+
 // Componentes
 import { GestionComponent } from './gestion/gestion.component';
 import { GenerarComponent } from './estadistica/generar/generar.component';
@@ -36,6 +37,10 @@ import { SModificarComponent } from './sucursal/s-modificar/s-modificar.componen
 // Services
 import {DataService} from './services/data.service';
 import { PedidosComponent } from './pedidos/pedidos.component';
+import { TNuevoComponent } from './pedidos/t-nuevo/t-nuevo.component';
+import { TPreparadoComponent } from './pedidos/t-preparado/t-preparado.component';
+import { TFacturadoComponent } from './pedidos/t-facturado/t-facturado.component';
+import { TRetiradoComponent } from './pedidos/t-retirado/t-retirado.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +69,11 @@ import { PedidosComponent } from './pedidos/pedidos.component';
     SEliminarComponent,
     SIngresarComponent,
     SModificarComponent,
-    PedidosComponent
+    PedidosComponent,
+    TNuevoComponent,
+    TPreparadoComponent,
+    TFacturadoComponent,
+    TRetiradoComponent
 
 
   ],
