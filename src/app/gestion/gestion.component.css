@@ -6,7 +6,13 @@
 .r2{
     background-color: rgb(101, 147, 163);
 }
-
-.m{
-    background-color: red;
- }
+.isDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+a[aria-disabled="true"] {
+  color: Red;
+  display: inline-block;  /* For IE11/ MS Edge bug */
+  pointer-events: none;
+  text-decoration: none;
+}
