@@ -20,42 +20,42 @@
     <input #signIn_contrasenaC type="password" class="form-control">
   </div>
 
-  <div class="container-fluid">
-  <div class="form-check-inline">
-    <input #radioPharmacy1 class="form-check-input" type="radio" name="exampleradioPharmacy1" value="option1" checked>
-    <label class="form-check-label" >
-      Phischel
-    </label>
 
-  </div>
-  <div class="form-check-inline">
-    <input #radioPharmacy2 class="form-check-input" type="radio" name="exampleradioPharmacy1" value="option2">
-    <label class="form-check-label" >
-      BombaTica
-    </label>
-  </div>
+
+  <div class="form-group">
+    <label>Farmacia</label>
+    <div>
+      <div class="form-check-inline">
+        <input #radioPharmacy1 class="form-check-input" type="radio" name="exampleradioPharmacy1" value="option1">
+        <label class="form-check-label">Phischel</label>
+      </div>
+      <div class="form-check-inline">
+        <input #radioPharmacy2 class="form-check-input" type="radio" name="exampleradioPharmacy1" value="option2">
+        <label class="form-check-label">BombaTica</label>
+      </div>
+    </div>
   </div>
 
-  <div class="container-fluid">
-  <div class="form-check-inline">
-    <input #radioGerente class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
-    <label class="form-check-label" >
-      Gerente
-    </label>
+
+
+  <div class="form-group">
+    <label>Rol</label>
+    <div>
+      <div class="form-check-inline">
+        <input #radioGerente class="form-check-input" type="radio" name="exampleradioPharmacy1" value="option1" >
+        <label class="form-check-label">Gerente</label>
+      </div>
+      <div class="form-check-inline">
+        <input #radioDependiente class="form-check-input" type="radio" name="exampleradioPharmacy2" value="option2">
+        <label class="form-check-label">Dependiente</label>
+      </div>
+      <div class="form-check-inline">
+        <input #radioFarmaceutico class="form-check-input" type="radio" name="exampleradioPharmacy3" value="option3">
+        <label class="form-check-label">Farmacéuticos</label>
+      </div>
+    </div>
   </div>
-  <div class="form-check-inline">
-    <input #radioDependiente class="form-check-input" type="radio" name="exampleRadios" value="option2">
-    <label class="form-check-label" >
-      Dependiente
-    </label>
-  </div>
-  <div class="form-check-inline">
-    <input #radioFarmaceutico class="form-check-input" type="radio" name="exampleRadios"  value="option2">
-    <label class="form-check-label" >
-      Farmacéuticos
-    </label>
-  </div>
-  </div>
+
 
   <button type="button" class="btn btn-primary btn-block" (click)="checkNewUser(signNombre.value,signIn_nombreUsuario.value,signIn_contrasena.value ,
   signIn_contrasenaC.value, radioGerente.checked, radioDependiente.checked,radioFarmaceutico.checked)">

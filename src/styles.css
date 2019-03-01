@@ -2,6 +2,7 @@
 
 nav{
   background: -moz-linear-gradient(DeepSkyBlue,Black);
+  background: -webkit-linear-gradient(DeepSkyBlue,Black);
 }
 
 div.degradado{
